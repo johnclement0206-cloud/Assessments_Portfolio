@@ -25,6 +25,8 @@ def european_capitals_quiz():
         user_answer = input(f"What is the capital of {country}? ")
         
         # check answer (case-insensitive using strip() and lower() func)
+        ### sources: https://docs.python.org/3/library/stdtypes.html#str.strip
+        #            https://docs.python.org/3/library/stdtypes.html#str.lower
         if user_answer.strip().lower() == correct_capital.lower():
             print("✓ Correct!")
             score += 1
